@@ -1,0 +1,65 @@
+@fontface {
+  font-family: HKConcentrate-Bold;
+  font-style: bold;
+  src: url(assets/fonts/HkConcentrar-Bold.tff); }
+@fontface {
+  font-family: "HKConcentrate-Regular";
+  font-style: normal;
+  src: url(assets/fonts/HkConcentrar-Regular.tff); }
+/*-----------VARIABLES---------*/
+/*-----------ATOMIC CLASSES---------*/
+.uppercase {
+  text-transform: uppercase; }
+
+.inline {
+  display: inline-block; }
+
+.justify-center {
+  justify-content: center; }
+
+/*-----------GENERAL---------*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+body {
+  font-style: HkConcentrar-Regular;
+  background-color: #FFF; }
+
+/*-----------GRID-LANDING---------*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name designer";
+  min-height: 100vh; }
+
+.name {
+  display: flex;
+  grid-area: name;
+  flex-direction: column; }
+
+.designer {
+  display: flex;
+  flex-direction: column;
+  grid-area: designer; }
+
+/*-----------GRID-PROJECTS---------*/
+.grid_projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "projects_presentation";
+  min-height: 100vh; }
+
+.projects_presentation {
+  grid-area: projects_presentation; }
+
+.projects_info {
+  display: flex;
+  flex-direction: row; }
+
+.projects-img {
+  width: 500px;
+  height: auto; }
+
+/*# sourceMappingURL=main.css.map */
