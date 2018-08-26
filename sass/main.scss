@@ -13,7 +13,7 @@
 /*-----------VARIABLES---------*/
 //Fonts
 $title-font: HKConcentrate-Bold;
-$primary-font:HkConcentrar-Regular;
+$primary-font:HkConcentrate-Regular;
 
 //Font Size
 
@@ -36,6 +36,30 @@ $background-color: #000;
   justify-content: center;
 }
 
+.align-center{
+  align-items: center;
+}
+
+.title-stroke{
+  font-family: "HKConcentrate-Bold";
+  font-size:80px;
+  color:white;
+  -webkit-text-stroke: 1px black;
+}
+
+.subtitle-big{
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.subtitle-medium{
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding:10px;
+}
+
 /*-----------GENERAL---------*/
 *{
   margin:0;
@@ -50,15 +74,21 @@ body{
 /*-----------GRID-LANDING---------*/
 .grid{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5% 65% 25% 5%;
   grid-template-areas:
-  "name designer";
+  ". name designer .";
   min-height: 100vh;
 }
 .name{
   display: flex;
   grid-area:name;
   flex-direction: column;
+}
+
+.name-work{
+  display: flex;
+  flex-direction: row;
+
 }
 .designer{
   display: flex;
@@ -68,9 +98,9 @@ body{
 /*-----------GRID-PROJECTS---------*/
 .grid_projects{
   display:grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 10% 85% 5%;
   grid-template-areas:
-  "projects_presentation";
+  ". projects_presentation .";
   min-height: 100vh;
 }
 
@@ -81,9 +111,45 @@ body{
 .projects_info{
   display: flex;
   flex-direction: row;
+  padding-left: 40px;
 }
 
 .projects-img{
-  width:500px;
+  padding-left: 40px;
+  width:700px;
   height: auto;
+}
+
+/*-----------GRID-ABOUT---------*/
+.grid-about{
+  display: grid;
+  grid-template-columns:100px 600px 200px 100px;
+  grid-template-areas:
+  ". about-header . ."
+  ". about-info about-contact ."
+  ". about-skills . ."
+  ". about-email about-email .";
+  min-height: 100vh;
+
+}
+
+.about-header{
+  grid-area: about-header;
+  background-color: aqua;
+}
+.about-info{
+  grid-area:about-info;
+  background-color: green;
+}
+.about-contact{
+  grid-area:about-contact;
+  background-color: red;
+}
+.about-skills{
+  grid-area:about-skills;
+  background-color: blue;
+}
+.about-email{
+  grid-area:about-email;
+  background-color: brown;
 }
