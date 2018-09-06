@@ -3,60 +3,96 @@
   <head>
     <title>Catarina Lucas</title>
     <link rel="stylesheet" type="text/css" href="sass/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
     <div class="grid-about">
       <!--TITLE--------->
       <div class="about-header"><!--header-->
-        <h1 class="uppercase">about me</h1>
+        <h1 class="uppercase title-stroke">about me</h1>
       </div><!--/header-->
       <!--INFO CARD --------->
       <div class="about-info">
-        <div class="about-bio">
-          <h3 class="uppercase">— about</h3>
-        </div>
-        <div class="about-experience">
-          <h3 class="uppercase">— experience</h3>
+        <div class="about-info--wrapper">
+          <div class="about-bio">
+            <h3 class="about-info--subtitle uppercase">— about</h3>
+            <p>Born in '97 and raised in Viseu,
+            Portugal I was always that curious kid
+            that asks the purpose of everything.
+            I wanted to know everything so I
+            could make a world of my own.</p>
+          </div>
+          <div class="about-experience">
+            <h3 class="about-info--subtitle uppercase">— experience</h3>
+            <p> Summer Internship @ Whitesmith
+              <br><span class="about-experience--date"> jul 2018 / set 2018 </span></p>
+
+            <p>Bachelor Degree in Design and Multimedia @ FCTUC
+              <br> <span class="about-experience--date">set 2015 / jun 2018</span></p>
+
+            <p>Lead Designer of BEST Green Day
+              <br> <span class="about-experience--date"> mar 2018 / may 2018</span></p>
+
+            <p>Main Organiser of blue-infinity Tech Challenge 2017
+              <br> <span class="about-experience--date"> nov 2017</span></p>
+
+            <p>IT Project Coordinator @ BEST Coimbra
+              <br> <span class="about-experience--date"> fev 2017 / set 2017</span></p>
+          </div>
         </div>
       </div><!--/info card-->
       <!--PHOTO --------->
       <div class="about-contact">
-        <div class="about-photo">
+        <div class="about-photo border">
         </div>
-        <div class="about-button">
+        <div class="about-button align-center justify-center">
+          <a href="mailto:catarinalucasloureiro@gmail.com?Subject=Hello%20" target="_top" class="about-button-link" style="color:white">
+            <p class="about-button--text">Contact Me</p>
+          </a>
         </div>
       </div><!--/photo-->
       <!--SKILLS CARD --------->
       <div class="about-skills">
         <!--title --------->
-        <div class="about-skills--header">
+        <div class="about-skills--header border-top border-left border-right justify-center align-center">
           <h1>Skills</h1>
         </div>
+      <div class="about-skills--main border justify-center align-center justify-evenly">
         <!--design --------->
-        <div class="about-skills--design">
-          <h3 class="uppercase">— design</h3>
-          <p>Web Design</p>
-          <p>Logo &amp; Branding</p>
-          <p>Editorial</p>
-          <p class="uppercase">ui &amp; ux/p>
+        <div class="about-skills--design about-skills--sections">
+          <h3 class="uppercase about-skills--textHeader">— design</h3>
+          <p class="about-skills--text">Web Design</p>
+          <p class="about-skills--text">Logo &amp; Branding</p>
+          <p class="about-skills--text">Editorial</p>
+          <p class="uppercase about-skills--text">ui &amp; ux</p>
         </div>
         <!--development --------->
-        <div class="about-skills--development">
-          <h3 class="uppercase">— development</h3>
-          <p class="uppercase">html</p>
-          <p class="uppercase">css/sass</p>
-          <p>React Native</p>
+        <div class="about-skills--development about-skills--sections">
+          <h3 class="uppercase about-skills--textHeader">— development</h3>
+          <p class="uppercase about-skills--text">html</p>
+          <p class="uppercase about-skills--text">css/sass</p>
+          <p class="about-skills--text">Javascript/JQuery</p>
+          <p class="about-skills--text">React Native</p>
         </div>
+      </div>
         <!--icons --------->
-        <div class="about-skills--icons">
+        <div class="about-skills--icons border-left border-right border-bottom justify-end alignSelf-end align-center">
+          <div class="about-skills--iconsWrapper">
+          <a target="_blank" href="https://www.behance.net/catarina_lucas"> <i class="fab fa-behance"></i> </a>
+          <a target="_blank" href="https://www.linkedin.com/in/catarinalucasloureiro/"> <i class="fab fa-linkedin-in"></i> </a>
+          <a target="_blank" href="https://github.com/catarinalucas"> <i class="fab fa-github"></i> </a>
+          <a target="_blank" href="https://www.instagram.com/whyareustalking/"> <i class="fab fa-instagram"></i> </a>
+        </div>
         </div>
       </div><!--/skills>
       <!EMAIL--------->
-      <div class="about-email">
-        <h3>catarinalucasloureiro@gmail.com</h3>
-        <div class="about-email--button">
+      <div class="about-email border justify-center align-center">
+        <h3 class="about-email--text">catarinalucasloureiro@gmail.com</h3>
+        <a href="mailto:catarinalucasloureiro@gmail.com?Subject=Hello%20" target="_top">
+          <div class="about-email--button border justify-center align-center" cursor="pointer">
           <h3 class="uppercase">send email</h3>
         </div>
+      </a>
       </div><!--/email-->
     </div><!---/grid-->
   </body>
