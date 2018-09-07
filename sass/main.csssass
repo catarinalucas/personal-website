@@ -173,19 +173,15 @@ body {
 .about-info--subtitle {
   padding-bottom: 20px; }
 
-.about-bio {
-  max-width: 350px; }
-
 .about-experience {
   padding-top: 60px;
   line-height: 1.5; }
 
 .about-experience p {
-  padding-top: 15px; }
+  padding-top: 10px; }
 
 .about-experience--date {
-  font-size: 15px;
-  color: #BBBBBB; }
+  font-size: 15px; }
 
 .about-contact {
   grid-area: about-contact;
@@ -262,4 +258,4 @@ body {
   height: 50px;
   width: 200px; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.csssass.map */
