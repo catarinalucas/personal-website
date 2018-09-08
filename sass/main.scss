@@ -468,5 +468,18 @@ body{
 .next_project{
   margin-top: 100px;
   grid-area: next_project;
-  background-color: Aquamarine;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+}
+
+.next_project p{
+  font-size:30px;
+}
+
+.next_project h3{
+  margin-top: 40px;
+  font-family: $title-font;
+  font-size: 60px;
 }
