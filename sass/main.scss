@@ -335,3 +335,73 @@ body{
   height: 50px;
   width:200px;
 }
+
+/*-----------GRID-PROJECT PAGE---------*/
+.grid-projectPage{
+  display: grid;
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-areas:
+  ". project_header project_header ."
+  ". project_description--left project_photo--top ."
+  ". project_photo--center project_photo--center ."
+  ". project_photo--left project_description--right ."
+  ". project_photo--bottomLeft project_photo--bottomRight ."
+  ". next_project next_project .";
+  min-height: 100vh;
+
+}
+
+.project_header{
+  display: grid;
+  grid-area: project_header;
+  background-color: red;
+}
+
+.project_description--left{
+  display: grid;
+  grid-area: project_description--left;
+  background-color: blue;
+  min-height: 50%;
+}
+
+.project_photo--top{
+  display: grid;
+  grid-area:project_photo--top;
+  background-color: purple;
+}
+
+.project_photo--center{
+  display: grid;
+  grid-area:project_photo--center;
+  background-color: aqua;
+}
+
+.project_photo--left{
+  display: grid;
+  grid-area:project_photo--left;
+  background-color: pink;
+}
+
+.project_description--right{
+  display: grid;
+  grid-area:project_description--right;
+  background-color: brown;
+}
+
+.project_photo--bottomLeft{
+  display: grid;
+  grid-area:project_photo--bottomLeft;
+  background-color: green;
+}
+
+.project_photo--bottomRight{
+  display: grid;
+  grid-area:project_photo--bottomRight;
+  background-color: AliceBlue;
+}
+
+.next_project{
+  display: grid;
+  grid-area: next_project;
+  background-color: Aquamarine;
+}
