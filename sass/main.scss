@@ -380,6 +380,7 @@ body{
 .project_description--box p{
   color:$primary-color;
   max-width: 350px;
+  line-height: 1.5;
 }
 
 .project_description--boxBottom{
@@ -435,6 +436,7 @@ body{
 
 .project_description--right p{
   max-width:350px;
+  line-height: 1.56;
 }
 
 .project_photo--bottomLeft{
@@ -482,4 +484,40 @@ body{
   margin-top: 40px;
   font-family: $title-font;
   font-size: 60px;
+}
+
+.project_header--ciclo h6{
+  font-size:105px;
+}
+
+.project_header--green h6{
+  font-size: 142px;
+}
+
+.project_header--requiem h6{
+  font-size: 99px;
+}
+
+.footer_grid{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas:
+  ". footer_grid-content .";
+}
+
+.footer_grid-content{
+  grid-area: footer_grid-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+footer p{
+  font-size: 15px;
+}
+
+.nav_wrap{
+  flex-direction: row;
 }
