@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Catarina Lucas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Catarina Lucas — Home</title>
+
     <link rel="stylesheet" type="text/css" href="sass/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png"  href="assets/images/favicon.png">
+
+    <meta name="description" content="Designer & Web Developer">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Design,Web Design,Web Development">
+    <meta name="author" content="Catarina Lucas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Catarina Lucas Portfolio">
+    <meta property="og:description" content="Designer & Web Developer">
+    <meta property="og:image" content="http://catarinalucas.me/assets/images/meta_photo.jpg">
+    <meta property="og:url" content="http://catarinalucas.me">
+    <meta property="og:site_name" content="Catarina Lucas">
+
+    <!--  Twitter Tags -->
+      <meta name="twitter:title" content="Catarina Lucas" />
+      <meta name="twitter:description" content="Designer & Web Developer">
+      <meta name="twitter:image" content="http://catarinalucas.me/assets/images/meta_photo.jpg">
+      <meta name="twitter:image:alt" content="Catarina Lucas">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@whyareustalking">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125846124-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125846124-1');
+    </script>
+
   </head>
 
   <body>
@@ -11,12 +46,10 @@
     <div class="grid">
       <!--name & view work--->
         <div class="name uppercase justify-center">
-          <h1 class="title-stroke">Catarina Lucas</h1>
+          <a href="about.html"><h1 class="title-stroke">Catarina Lucas</h1></a>
           <div class="name-work align-center">
-            <svg height="2" width="130">
-              <line x1="0" y1="0" x2="130" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg>
-            <h5 class="subtitle-medium">View Work</h5>
+            <div class="line"></div>
+            <a href="#projects"><h5 class="subtitle-medium">View Work</h5></a>
           </div>
         </div>
         <!--designer--->
@@ -24,61 +57,88 @@
           <h3 class="subtitle-big">Designer</h3>
         </div>
     </div><!--grid--->
-      <!--REQUIEM --------->
-    <div class="grid_projects">
+
+    <!--REQUIEM --------->
+    <div class="grid_projects" id="projects">
       <div class="projects_presentation align-center justify-center">
-        <h1 class="uppercase title-stroke">Requiem</h1>
-        <img class="projects-img" src="assets/images/project-img.png">
-        <div class="projects_info align-center">
-          <svg height="2" width="200">
-            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-          </svg>
-          <h5 class="subtitle-medium">Interactive Installation</h5>
-          <h5 class="subtitle-medium">Web Design</h5>
+        <div data-relative-input="true" id="scene1">
+          <a href="project-requiem.html" data-depth="0.3"><h1 class="uppercase title-stroke title-stroke-project">Requiem</h1></a>
+          <div data-depth="0.2" class="projects_presentation__img-container">
+            <a href="project-requiem.html"><img alt="Requiem Project Cover" class="projects-img" src="assets/images/gif_requiem.gif"></a>
+            <div class="projects_info align-center">
+              <div class="line"></div>
+              <h5 class="subtitle-medium">Interactive Installation</h5>
+              <h5 class="subtitle-medium">Web Design</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
       <!--STEREOGNOSIS --------->
       <div class="grid_projects">
         <div class="projects_presentation align-center justify-center">
-          <h1 class="uppercase title-stroke">Stereognosis</h1>
-          <img class="projects-img" src="assets/images/project-img.png">
-          <div class="projects_info align-center">
-            <svg height="2" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg>
-            <h5 class="subtitle-medium">Editorial Design</h5>
-            <h5 class="subtitle-medium">Web Design</h5>
+          <div data-relative-input="true" id="scene2">
+            <a href="project-stereo.html" data-depth="0.1"><h1 class="uppercase title-stroke title-stroke-project">Stereognosis</h1></a>
+            <div data-depth="0.2" class="projects_presentation__img-container">
+              <a href="project-stereo.html"><img alt="Stereognosis Project Cover" class="projects-img" src="assets/images/project-img.png"></a>
+              <div class="projects_info align-center">
+                <div class="line"></div>
+                <h5 class="subtitle-medium">Editorial Design</h5>
+                <h5 class="subtitle-medium">Web Design</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!--CICLO DE CONVERSAS --------->
       <div class="grid_projects">
         <div class="projects_presentation align-center justify-center">
-          <h1 class="uppercase title-stroke">Ciclo de Conversas</h1>
-          <img class="projects-img" src="assets/images/project-img.png">
-          <div class="projects_info align-center">
-            <svg height="2" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg>
-            <h5 class="subtitle-medium">Branding</h5>
-            <h5 class="subtitle-medium">Graphic Design</h5>
+          <div data-relative-input="true" id="scene3">
+            <a href="project-ciclo.html" data-depth="0.2"><h1 class="uppercase title-stroke title-stroke-project">Ciclo de Conversas</h1></a>
+            <div data-depth="0.3" class="projects_presentation__img-container">
+              <a href="project-ciclo.html"><img alt="Ciclo de Conversas Project Cover" class="projects-img" src="assets/images/ciclo_photocenter_mediumquality.jpg"></a>
+              <div class="projects_info align-center">
+                <div class="line"></div>
+                <h5 class="subtitle-medium">Branding</h5>
+                <h5 class="subtitle-medium">Graphic Design</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!--BEST GREEN DAY --------->
       <div class="grid_projects">
         <div class="projects_presentation align-center justify-center">
-          <h1 class="uppercase title-stroke">best green day</h1>
-          <img class="projects-img" src="assets/images/project-img.png">
-          <div class="projects_info align-center">
-            <svg height="2" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg>
-            <h5 class="subtitle-medium">Branding</h5>
-            <h5 class="subtitle-medium">Graphic Design</h5>
+          <div data-relative-input="true" id="scene4">
+            <a href="project-green.html" data-depth="0.1"><h1 class="uppercase title-stroke title-stroke-project">best green day</h1></a>
+            <div data-depth="0.1" class="projects_presentation__img-container">
+              <a href="project-green.html"><img alt="BEST Green Day Project Cover" class="projects-img" src="assets/images/green-cover.jpg"></a>
+              <div class="projects_info align-center">
+                <div class="line"></div>
+                <h5 class="subtitle-medium">Branding</h5>
+                <h5 class="subtitle-medium">Graphic Design</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="footer_grid">
+          <div class="name_wrap">
+            <p>by Catarina Lucas</p>
+          </div>
+          <div class="nav_wrap">
+            <p><a href="index.html">Home</a> — <a href="about.html">About</a></p>
+          </div>
+          <div class="email_wrap">
+            <p>catarinalucasloureiro@gmail.com</p>
+          </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="script.js"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script src="scroll.js"></script>
   </body>
 </html>
