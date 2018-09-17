@@ -1,20 +1,20 @@
 @fontface {
-  font-family: HKConcentrate-Bold;
+  font-family: "HKConcentrate-Bold";
   font-style: bold;
-  src:url(assets/fonts/HkConcentrar-Bold.tff);
+  src:url(assets/fonts/HkConcentrar-Bold.woff);
 }
 
 @fontface {
   font-family: "HKConcentrate-Regular";
   font-style: normal;
-  src:url(assets/fonts/HkConcentrar-Regular.tff);
+  src:url(assets/fonts/HkConcentrar-Regular.woff);
 }
 
 /*-----------VARIABLES---------*/
 //Fonts
-$title-font: HKConcentrate-Bold;
-$primary-font:HKConcentrate-Regular;
-$secondary-font:'PT Serif';
+$title-font: HKConcentrate-Bold,sans-serif;
+$primary-font:HKConcentrate-Regular,sans-serif;
+$secondary-font:'PT Serif',serif;
 
 //Font Size
 
@@ -87,7 +87,7 @@ $background-color: #000;
 }
 
 .title-stroke{
-  font-family: "HKConcentrate-Bold";
+  font-family: "HKConcentrate-Bold",sans-serif;
   font-size:80px;
   color:white;
   -webkit-text-stroke: 1px black;
