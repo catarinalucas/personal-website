@@ -1,0 +1,98 @@
+/* ----------------
+SPACING UTILS
+---------------- */
+
+// u-m-1 to u-m-16 for margin all around
+// u-mx-1 to u-mx-16 for margin left and right
+// u-my-1 to u-my-16 for margin top and bottom
+// u-mt-1 (margin top) / u-mb-1 (margin bottom) / u-ml-1 (margin left) / u-mr-1 (margin right)
+
+// u-p-1 to u-p-16 for padding all around
+// u-px-1 to u-px-16 for padding left and right
+// u-py-1 to u-py-16 for padding top and bottom
+// u-pt-1 (padding top) / u-pb-1 (padding bottom) / u-pl-1 (padding left) / u-pr-1 (padding right)
+
+@for $i from 0 through 16 {
+  .u-m-#{$i} { margin: $spacing * $i !important; }
+  .u-mx-#{$i} { margin-left: $spacing * $i !important; margin-right: $spacing * $i !important; }
+  .u-my-#{$i} { margin-top: $spacing * $i; margin-bottom: $spacing * $i !important; }
+  .u-mt-#{$i} { margin-top: $spacing * $i !important; }
+  .u-mb-#{$i} { margin-bottom: $spacing * $i !important; }
+  .u-ml-#{$i} { margin-left: $spacing * $i !important; }
+  .u-mr-#{$i} { margin-right: $spacing * $i !important; }
+
+  .u-p-#{$i} { padding: $spacing * $i !important; }
+  .u-px-#{$i} { padding-left: $spacing * $i !important; padding-right: $spacing * $i !important; }
+  .u-py-#{$i} { padding-top: $spacing * $i; padding-bottom: $spacing * $i !important; }
+  .u-pt-#{$i} { padding-top: $spacing * $i !important; }
+  .u-pb-#{$i} { padding-bottom: $spacing * $i !important; }
+  .u-pl-#{$i} { padding-left: $spacing * $i !important; }
+  .u-pr-#{$i} { padding-right: $spacing * $i !important; }
+}
+
+// u-m-1-sm to u-m-16-sm for margin from breakpoint-sm and above
+// naming logic same as above
+
+@for $i from 0 through 16 {
+  @media only screen and (min-width: $breakpoint-sm) {
+    .u-m-#{$i}-sm { margin: $spacing * $i !important; }
+    .u-mx-#{$i}-sm { margin-left: $spacing * $i !important; margin-right: $spacing * $i !important; }
+    .u-my-#{$i}-sm { margin-top: $spacing * $i; margin-bottom: $spacing * $i !important; }
+    .u-mt-#{$i}-sm { margin-top: $spacing * $i !important; }
+    .u-mb-#{$i}-sm { margin-bottom: $spacing * $i !important; }
+    .u-ml-#{$i}-sm { margin-left: $spacing * $i !important; }
+    .u-mr-#{$i}-sm { margin-right: $spacing * $i !important; }
+
+    .u-p-#{$i}-sm { padding: $spacing * $i !important; }
+    .u-px-#{$i}-sm { padding-left: $spacing * $i !important; padding-right: $spacing * $i !important; }
+    .u-py-#{$i}-sm { padding-top: $spacing * $i; padding-bottom: $spacing * $i !important; }
+    .u-pt-#{$i}-sm { padding-top: $spacing * $i !important; }
+    .u-pb-#{$i}-sm { padding-bottom: $spacing * $i !important; }
+    .u-pl-#{$i}-sm { padding-left: $spacing * $i !important; }
+    .u-pr-#{$i}-sm { padding-right: $spacing * $i !important; }
+  }
+}
+
+// u-m-1-md to u-m-16-md for margin from breakpoint-md and above
+// naming logic same as above
+
+@for $i from 0 through 16 {
+  @media only screen and (min-width: $breakpoint-md) {
+    .u-m-#{$i}-md { margin: $spacing * $i !important; }
+    .u-mx-#{$i}-md { margin-left: $spacing * $i !important; margin-right: $spacing * $i !important; }
+    .u-my-#{$i}-md { margin-top: $spacing * $i; margin-bottom: $spacing * $i !important; }
+    .u-mt-#{$i}-md { margin-top: $spacing * $i !important; }
+    .u-mb-#{$i}-md { margin-bottom: $spacing * $i !important; }
+    .u-ml-#{$i}-md { margin-left: $spacing * $i !important; }
+    .u-mr-#{$i}-md { margin-right: $spacing * $i !important; }
+
+    .u-p-#{$i}-md { padding: $spacing * $i !important; }
+    .u-px-#{$i}-md { padding-left: $spacing * $i !important; padding-right: $spacing * $i !important; }
+    .u-py-#{$i}-md { padding-top: $spacing * $i; padding-bottom: $spacing * $i !important; }
+    .u-pt-#{$i}-md { padding-top: $spacing * $i !important; }
+    .u-pb-#{$i}-md { padding-bottom: $spacing * $i !important; }
+    .u-pl-#{$i}-md { padding-left: $spacing * $i !important; }
+    .u-pr-#{$i}-md { padding-right: $spacing * $i !important; }
+  }
+}
+
+/* ----------------
+FLEX UTILS
+---------------- */
+
+.u-w-100 { width: 100% !important; }
+.u-h-100 { height: 100% !important; }
+.u-h-auto { height: auto !important; }
+
+.u-flex { display: flex; }
+.u-flex-1 { flex: 1 !important; }
+.u-justify-center { display: flex; justify-content: center; }
+.u-justify-between { display: flex; justify-content: space-between; }
+.u-flex-col { display: flex; flex-direction: column; }
+.u-align-self-start { align-self: start; }
+.u-align-self-end { align-self: end; }
+.u-align-self-center { align-self: center; }
+
+.u-flex-wrap { flex-wrap: wrap; }
+
+.relative { position: relative; }

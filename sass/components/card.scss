@@ -1,0 +1,28 @@
+.card {
+  border: solid 2px map-get($colors, light);
+  border-radius: $spacing * 2;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    border-radius: $spacing * 3;
+  }
+}
+
+.card__header {
+  border-bottom: solid 2px map-get($colors, light);
+  background-color: map-get($colors, primary);
+  color: map-get($colors, light);
+  margin: 0;
+  font-family: $title-font;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: $spacing;
+  font-size: map-get($ts-6, font-size);
+  line-height: map-get($ts-6, line-height);
+
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing * 2;
+    font-size: map-get($ts-5, font-size);
+    line-height: map-get($ts-5, line-height);
+  }
+}

@@ -1,0 +1,9 @@
+.body-dark {
+  background-color: map-get($colors, dark);
+  color: map-get($colors, light);
+}
+
+.body-light {
+  background-color: map-get($colors, light);
+  color: map-get($colors, dark);
+}
