@@ -1,0 +1,82 @@
+/* ----------------
+COLORS
+---------------- */
+
+$colors: (
+  dark: #000000,
+  light: #FFFFFF,
+  primary: #9971FF,
+  primary-light: #D1A6FD,
+  secondary: #9DD9FB,
+);
+
+
+/* ----------------
+TYPOGRAPHY
+---------------- */
+
+$title-font: '1617', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+/* ----------------
+TYPESCALE
+---------------- */
+
+$ts-1: (
+  font-size: 88px,
+  line-height: 96px
+);
+$ts-2: (
+  font-size: 64px,
+  line-height: 72px
+);
+$ts-3: (
+  font-size: 48px,
+  line-height: 60px
+);
+$ts-4: (
+  font-size: 32px,
+  line-height: 44px
+);
+$ts-5: (
+  font-size: 24px,
+  line-height: 36px
+);
+$ts-6: (
+  font-size: 16px,
+  line-height: 24px
+);
+$ts-7: (
+  font-size: 12px,
+  line-height: 20px
+);
+
+// Font-size
+$ts-fs-1: 88px;
+$ts-fs-2: 64px;
+$ts-fs-3: 48px;
+$ts-fs-4: 32px;
+$ts-fs-5: 24px;
+$ts-fs-6: 16px;
+$ts-fs-7: 12px;
+
+// Line height
+$ts-lh-1: 96px;
+$ts-lh-2: 72px;
+$ts-lh-3: 60px;
+$ts-lh-4: 44px;
+$ts-lh-5: 36px;
+$ts-lh-6: 24px;
+$ts-lh-7: 20px;
+
+/* ----------------
+SPACING
+---------------- */
+
+$spacing: 8px;
+
+/* ----------------
+RESPONSIVE
+---------------- */
+
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;

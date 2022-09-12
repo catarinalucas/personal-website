@@ -1,0 +1,56 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: start;
+}
+
+.grid--gutter {
+  column-gap: $spacing;
+  row-gap: $spacing;
+}
+
+.grid--gutter-md {
+  column-gap: $spacing;
+  row-gap: $spacing;
+  @media (min-width: $breakpoint-md) {
+    column-gap: $spacing * 4;
+    row-gap: $spacing * 4;
+  }
+}
+
+.grid--no-row-gap {
+  row-gap: 0;
+}
+
+.grid--expand {
+  align-items: unset;
+}
+
+.grid--end {
+  align-items: flex-end;
+}
+
+// 12 column grid - from "col-1" to "col-12"
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+// 12 column grid sm breakpoint - from "col-1-sm" to "col-12-sm"
+@for $i from 1 through 12 {
+  .col-#{$i}-sm {
+    @media (min-width: $breakpoint-sm) {
+      grid-column: span $i;
+    }
+  }
+}
+
+// 12 column grid md breakpoint - from "col-1-md" to "col-12-md"
+@for $i from 1 through 12 {
+  .col-#{$i}-md {
+    @media (min-width: $breakpoint-md) {
+      grid-column: span $i;
+    }
+  }
+}
