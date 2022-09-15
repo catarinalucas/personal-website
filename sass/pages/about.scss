@@ -1,0 +1,42 @@
+.about-text {
+  font-weight: 400;
+}
+
+.marquee {
+  box-sizing: border-box;
+  width: 100%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee div {
+  padding-left: 100%;
+  display: inline-flex;
+  align-items: center;
+  animation: animate 10s linear infinite;
+  grid-gap: $spacing;
+  color: map-get($colors, primary);
+  font-size: map-get($ts-5, font-size);
+  line-height: 4px;
+  font-family: $title-font;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.marquee-line {
+  height: 1px;
+  color: map-get($colors, primary);
+  background-color: map-get($colors, primary);
+}
+
+.container-cards {
+  row-gap: $spacing * 3;
+}
