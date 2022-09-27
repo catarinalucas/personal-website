@@ -5,3 +5,65 @@
 .project-subtitle {
   font-weight: 400;
 }
+
+.project-type {
+  font-weight: 500;
+  display: flex;
+  grid-gap: $spacing;
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.project-divider {
+  border-top: 1px solid map-get($colors, light);
+}
+
+.project-details-title {
+  display: flex;
+  grid-gap: $spacing;
+  align-items: center;
+
+  h3 {
+    font-family: "1617", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+  }
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.project-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding-bottom: $spacing;
+  }
+}
+
+.project-section-title {
+  display: flex;
+  grid-gap: $spacing;
+  align-items: center;
+}
+
+.project-text {
+  max-width: 700px;
+}
+
+.project-problem-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.project-list {
+  padding-left: 0;
+  line-height: 1.8;
+}
