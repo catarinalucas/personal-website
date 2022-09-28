@@ -17,6 +17,13 @@
   border-radius: 12px;
 }
 
+.project-image-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  aspect-ratio: 16 / 9;
+}
+
 .project-divider {
   border-top: 1px solid map-get($colors, light);
 }
@@ -38,8 +45,9 @@
 }
 
 .project-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: circle;
+  padding-left: $spacing * 3;
+  line-height: 1.8;
 
   li {
     padding-bottom: $spacing;
@@ -60,10 +68,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-}
-
-.project-list {
-  padding-left: 0;
-  line-height: 1.8;
 }
