@@ -8,6 +8,7 @@ $colors: (
   primary: #9971FF,
   primary-light: #D1A6FD,
   secondary: #9DD9FB,
+  tertiary: #FEE934,
 );
 
 
@@ -22,51 +23,45 @@ TYPESCALE
 ---------------- */
 
 $ts-1: (
-  font-size: 88px,
-  line-height: 96px
+  font-size: 103px,
+  line-height: 167px
 );
 $ts-2: (
-  font-size: 38px,
-  line-height: 70px
+  font-size: 86px,
+  line-height: 139px
 );
 $ts-3: (
-  font-size: 34px,
-  line-height: 60px
+  font-size: 72px,
+  line-height: 117px
 );
 $ts-4: (
-  font-size: 32px,
-  line-height: 44px
+  font-size: 60px,
+  line-height: 97px
 );
 $ts-5: (
-  font-size: 24px,
-  line-height: 36px
+  font-size: 50px,
+  line-height: 81px
 );
 $ts-6: (
-  font-size: 22px,
-  line-height: 30px
+  font-size: 42px,
+  line-height: 68px
 );
 $ts-7: (
-  font-size: 14px,
-  line-height: 20px
+  font-size: 35px,
+  line-height: 57px
 );
-
-// Font-size
-$ts-fs-1: 88px;
-$ts-fs-2: 38px;
-$ts-fs-3: 34px;
-$ts-fs-4: 32px;
-$ts-fs-5: 24px;
-$ts-fs-6: 22px;
-$ts-fs-7: 14px;
-
-// Line height
-$ts-lh-1: 96px;
-$ts-lh-2: 70px;
-$ts-lh-3: 60px;
-$ts-lh-4: 44px;
-$ts-lh-5: 36px;
-$ts-lh-6: 30px;
-$ts-lh-7: 20px;
+$ts-8: (
+  font-size: 29px,
+  line-height: 47px
+);
+$ts-9: (
+  font-size: 24px,
+  line-height: 39px
+);
+$ts-10: (
+  font-size: 20px,
+  line-height: 32px
+);
 
 /* ----------------
 SPACING
